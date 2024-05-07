@@ -51,9 +51,6 @@ window.onload = function() {
         "black";
       containerSymbolEnd.appendChild(paragraphSymbolEnd).style.color = "black";
     }
-
-    containerSymbolStart.appendChild(paragraphSymbolStart);
-    containerSymbolEnd.appendChild(paragraphSymbolEnd);
   };
   cardsSymbols();
 };
