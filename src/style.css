@@ -1,1 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card-body {
+  font-size: 55px;
+}
+
+.card-number-center {
+  font-size: 100px;
+  font-family: "Festive", cursive;
+  font-style: normal;
+  margin-top: -30px;
+}
+
+.card-symbol-end p {
+  margin-bottom: -30px;
+}
