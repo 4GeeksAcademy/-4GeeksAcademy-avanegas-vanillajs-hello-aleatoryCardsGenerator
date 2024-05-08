@@ -64,4 +64,11 @@ window.onload = function() {
     console.log("Timer");
     window.location.reload();
   };
+
+  //Resize
+  const resizeCard = document.querySelector(".card");
+  if (resizeCard && resizeCard.style) {
+    resizeCard.style.height = "300px";
+    resizeCard.style.widht = "200px";
+  }
 };
