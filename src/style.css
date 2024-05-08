@@ -16,15 +16,11 @@
 }
 
 .resize {
-  margin-top: -50px;
+  margin-top: -90px;
 }
 
-.randomCard {
+.newCardAndTimerButton {
   margin-top: -70px;
-}
-
-.timerCard {
-  margin-top: -80px;
 }
 
 .widthSize::placeholder,
