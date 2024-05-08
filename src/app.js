@@ -55,10 +55,13 @@ window.onload = function() {
   cardsSymbols();
 
   // New card
-
   window.clickNewCard = function clickNewCard() {
     window.location.reload();
   };
 
   // Time up
+  window.timerCardFunction = function timerCardFunction() {
+    console.log("Timer");
+    window.location.reload();
+  };
 };
