@@ -68,7 +68,7 @@ window.onload = function() {
   //Resize
   const resizeCard = document.querySelector(".card");
   if (resizeCard && resizeCard.style) {
-    resizeCard.style.height = "300px";
+    resizeCard.style.height = "450px";
     resizeCard.style.widht = "200px";
   }
 };
