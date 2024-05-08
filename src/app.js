@@ -54,11 +54,11 @@ window.onload = function() {
   };
   cardsSymbols();
 
-// New card
+  // New card
 
   window.clickNewCard = function clickNewCard() {
     window.location.reload();
   };
 
-// Time up
+  // Time up
 };
