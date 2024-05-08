@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards Generator DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./4geeks.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cards Generator DOM</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./4geeks.ico" />
-</head>
-
-<body class="bg-success">
-  <div class="container">
-    <div class="row d-flex justify-content-center align-items-center vh-100">
-      <div class="card border-warning" style="width: 15rem; height: 30rem; border-radius: 15px;">
-        <div class="card-body">
-          <div class="card-symbol-start d-flex card-title justify-content-start">
-            <!-- <p></p> -->
+  <body class="bg-success">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center vh-100">
+        <div
+          class="card border-warning"
+          style="width: 15rem; height: 30rem; border-radius: 15px;"
+        >
+          <div class="card-body">
+            <div
+              class="card-symbol-start d-flex card-title justify-content-start"
+            >
+              <!-- <p></p> -->
+            </div>
           </div>
-        </div>
 
-        <div class="card-body">
-          <div class="card-number-center d-flex card-title justify-content-center">
-            <!-- <p></p> -->
+          <div class="card-body">
+            <div
+              class="card-number-center d-flex card-title justify-content-center"
+            >
+              <!-- <p></p> -->
+            </div>
           </div>
-        </div>
 
-        <div class="card-body">
-          <div class="card-symbol-end d-flex card-title justify-content-end">
-            <!-- <p></p> -->
+          <div class="card-body">
+            <div class="card-symbol-end d-flex card-title justify-content-end">
+              <!-- <p></p> -->
+            </div>
           </div>
         </div>
       </div>
+      <div class="randomCard d-flex justify-content-end">
+        <button
+          type="button"
+          onclick="clickNewCard()"
+          class="col-2 btn btn-outline-warning align-items-center"
+        >
+          New Card
+        </button>
+      </div>
+      <div class="timerCard d-flex justify-content-end">
+        <button
+          type="button"
+          onclick="setTimeout(timerCardFunction,5000)"
+          class="col-2 btn btn-outline-warning align-items-center"
+        >
+          Timer 5'
+        </button>
+      </div>
+      <div class="mb-3 col-1">
+        <span id="inputGroup-sizing-sm"></span>
+        <input
+          type="text"
+          class="heightSize form-control"
+          aria-label="Sizing example input"
+          placeholder="Height"
+        />
+      </div>
+      <div class="mb-3 col-1">
+        <span id="inputGroup-sizing-sm"></span>
+        <input
+          type="text"
+          class="widthSize form-control"
+          aria-label="Sizing example input"
+          placeholder="Width"
+        />
+      </div>
+      <div class="resizeCard d-flex justify-content-start">
+        <button
+          type="button"
+          onclick="resizeNewCard()"
+          class="buttonResize col-2 btn btn-outline-warning align-items-center"
+        >
+          Resize
+        </button>
+      </div>
     </div>
-    <div class="randomCard d-flex justify-content-end">
-      <button type="button" onclick="clickNewCard()" class="col-2 btn btn-outline-warning align-items-center">New
-        Card</button>
-    </div>
-    <div class="timerCard d-flex justify-content-end">
-      <button type="button" onclick="setTimeout(timerCardFunction,5000)"
-        class="col-2 btn btn-outline-warning align-items-center">Timer
-        5'</button>
-    </div>
-  </div>
-  </div>
-</body>
-
+  </body>
 </html>

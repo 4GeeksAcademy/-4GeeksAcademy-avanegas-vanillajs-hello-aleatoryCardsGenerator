@@ -55,20 +55,26 @@ window.onload = function() {
   cardsSymbols();
 
   // New card
-  window.clickNewCard = function clickNewCard() {
+  window.clickNewCard = () => {
     window.location.reload();
   };
 
   // Time up
-  window.timerCardFunction = function timerCardFunction() {
+  window.timerCardFunction = () => {
     console.log("Timer");
     window.location.reload();
   };
 
   //Resize
-  const resizeCard = document.querySelector(".card");
-  if (resizeCard && resizeCard.style) {
-    resizeCard.style.height = "450px";
-    resizeCard.style.widht = "200px";
-  }
+
+  window.resizeNewCard = () => {
+    const resizeCard = document.querySelector(".card");
+    const stringHeight = document.querySelector(".heightSize").value;
+    const stringWidth = document.querySelector(".widthSize").value;
+    if (resizeCard && resizeCard.style) {
+      resizeCard.style.height = stringHeight + "px";
+      resizeCard.style.widht = stringWidth + "px";
+      console.log("entró!!");
+    }
+  };
 };
