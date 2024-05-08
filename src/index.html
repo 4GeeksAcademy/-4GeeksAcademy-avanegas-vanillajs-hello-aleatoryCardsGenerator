@@ -65,32 +65,36 @@
           Timer 5'
         </button>
       </div>
-      <div class="mb-3 col-1">
-        <span id="inputGroup-sizing-sm"></span>
-        <input
-          type="text"
-          class="heightSize form-control"
-          aria-label="Sizing example input"
-          placeholder="Height"
-        />
+      <div class="resize d-flex justify-content-space">
+        <div class="me-2 mb-3 col-1">
+          <span id="inputGroup-sizing-sm"></span>
+          <input
+            type="text"
+            class="heightSize btn btn-outline-warning form-control"
+            aria-label="Sizing example input"
+            placeholder="Height"
+          />
+        </div>
+        <div class="mb-3 col-1">
+          <span id="inputGroup-sizing-sm"></span>
+          <input
+            type="text"
+            class="widthSize btn btn-outline-warning form-control"
+            aria-label="Sizing example input"
+            placeholder="Width"
+          />
+        </div>
       </div>
-      <div class="mb-3 col-1">
-        <span id="inputGroup-sizing-sm"></span>
-        <input
-          type="text"
-          class="widthSize form-control"
-          aria-label="Sizing example input"
-          placeholder="Width"
-        />
-      </div>
-      <div class="resizeCard d-flex justify-content-start">
-        <button
-          type="button"
-          onclick="resizeNewCard()"
-          class="buttonResize col-2 btn btn-outline-warning align-items-center"
-        >
-          Resize
-        </button>
+      <div>
+        <div class="resizeCard d-flex justify-content-start">
+          <button
+            type="button"
+            onclick="resizeNewCard()"
+            class="buttonResize col-2 btn btn-outline-warning align-items-center"
+          >
+            Resize
+          </button>
+        </div>
       </div>
     </div>
   </body>

@@ -15,9 +15,9 @@
   margin-bottom: -30px;
 }
 
-/* .resizeCard {
-  margin-top: 70px;
-} */
+.resize {
+  margin-top: -50px;
+}
 
 .randomCard {
   margin-top: -70px;
@@ -25,4 +25,10 @@
 
 .timerCard {
   margin-top: -80px;
+}
+
+.widthSize::placeholder,
+.heightSize::placeholder {
+  color: white;
+  font-size: 13px;
 }
