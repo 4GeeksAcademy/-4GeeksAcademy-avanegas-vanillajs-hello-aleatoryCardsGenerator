@@ -51,12 +51,12 @@ window.onload = function() {
 
   // New card
   const buttonMakeNewCard = document.querySelector(".buttonNewCard");
-  console.log("buttonID");
+
   buttonMakeNewCard.addEventListener("click", event => {
-    console.log("clickNewCard");
     window.location.reload();
   });
 
+  // Timer
   const timerReloadButton = document.querySelector(".buttonTimer");
 
   timerReloadButton.addEventListener("click", event => {
@@ -65,7 +65,7 @@ window.onload = function() {
     }, 5000);
   });
 
-  //Resize
+  // Resize
   const buttonResize = document.querySelector(".buttonClickResize");
 
   buttonResize.addEventListener("click", event => {
