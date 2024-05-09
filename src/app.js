@@ -12,8 +12,6 @@ window.onload = function() {
     const randomCards = Math.floor(Math.random() * 14);
     const selectCard = cards[randomCards];
 
-    // console.log(selectCard);
-
     const paragraph = document.createElement("p");
     paragraph.textContent = selectCard;
 
@@ -52,9 +50,12 @@ window.onload = function() {
   cardsSymbols();
 
   // New card
-  window.clickNewCard = () => {
+  const buttonMakeNewCard = document.querySelector(".buttonNewCard");
+  console.log("buttonID");
+  buttonMakeNewCard.addEventListener("click", event => {
+    console.log("clickNewCard");
     window.location.reload();
-  };
+  });
 
   // Time up
   window.timerCardFunction = () => {
