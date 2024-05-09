@@ -28,29 +28,26 @@ window.onload = function() {
     const symbolsRandom = Math.floor(Math.random() * 4);
     const selectSymbols = symbols[symbolsRandom];
 
-    // console.log(selectSymbols);
-
     const paragraphSymbolStart = document.createElement("p");
     paragraphSymbolStart.textContent = selectSymbols;
-
-    const containerSymbolStart = document.querySelector(".card-symbol-start");
-    containerSymbolStart.appendChild(paragraphSymbolStart);
 
     const paragraphSymbolEnd = document.createElement("p");
     paragraphSymbolEnd.textContent = selectSymbols;
 
+    if (selectSymbols === "♦" || selectSymbols === "♥") {
+      paragraphSymbolStart.style.color = "red";
+      paragraphSymbolEnd.style.color = "red";
+    } else {
+      paragraphSymbolStart.style.color = "black";
+      paragraphSymbolEnd.style.color = "black";
+    }
+    paragraphSymbolEnd.style.transform = "rotate(180deg)";
+
+    const containerSymbolStart = document.querySelector(".card-symbol-start");
+    containerSymbolStart.appendChild(paragraphSymbolStart);
+
     const containerSymbolEnd = document.querySelector(".card-symbol-end");
     containerSymbolEnd.appendChild(paragraphSymbolEnd);
-
-    if (selectSymbols === "♦" || selectSymbols === "♥") {
-      containerSymbolStart.appendChild(paragraphSymbolStart).style.color =
-        "red";
-      containerSymbolEnd.appendChild(paragraphSymbolEnd).style.color = "red";
-    } else {
-      containerSymbolStart.appendChild(paragraphSymbolStart).style.color =
-        "black";
-      containerSymbolEnd.appendChild(paragraphSymbolEnd).style.color = "black";
-    }
   };
   cardsSymbols();
 
@@ -61,7 +58,6 @@ window.onload = function() {
 
   // Time up
   window.timerCardFunction = () => {
-    console.log("Timer");
     window.location.reload();
   };
 
@@ -73,8 +69,7 @@ window.onload = function() {
     const stringWidth = document.querySelector(".widthSize").value;
     if (resizeCard && resizeCard.style) {
       resizeCard.style.height = stringHeight + "px";
-      resizeCard.style.widht = stringWidth + "px";
-      console.log("entró!!");
+      resizeCard.style.width = stringWidth + "px";
     }
   };
 };
